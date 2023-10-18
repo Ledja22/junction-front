@@ -1,12 +1,12 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit'
 import API from '../utils/API'
 
-type User = {
-  id: string,
-  username: string,
-  role: string,
-  vehicle: []
-}
+// type User = {
+//   id: string,
+//   username: string,
+//   role: string,
+//   vehicle: []
+// }
 
 const userInitialstate = {
   id: null,
