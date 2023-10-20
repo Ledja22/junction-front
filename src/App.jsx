@@ -6,6 +6,7 @@ import Button from '@mui/material/Button';
 import DataTable from './core/DataTable.jsx';
 import { API_URL } from './utils/API_URL.js';
 import Roulette from './components/Roulette';
+import AirAlbania from "./assets/AirAlbania.svg";
 
 const columns = [
   { field: 'id', headerName: 'ID', width: 70 },
@@ -84,7 +85,9 @@ function App() {
         <button aria-label="Decrement value" onClick={() => dispatch(decrement())}>
           Decrement
         </button>
-
+        <div className="w-full">
+          <img src={AirAlbania} alt="AirAlbania"/>
+        </div>
         <button
           aria-label="Decrement value"
           onClick={() => dispatch(showSpinner('Loading data...'))}>
